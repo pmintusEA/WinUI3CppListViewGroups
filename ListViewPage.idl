@@ -1,0 +1,30 @@
+// Copyright (c) Microsoft Corporation and Contributors.
+// Licensed under the MIT License.
+
+namespace ListViewGroups
+{
+    [default_interface]
+    runtimeclass ListViewPage : Microsoft.UI.Xaml.Controls.Page
+    {
+        ListViewPage();
+
+        Windows.Foundation.Collections.IObservableVector<GroupSection> MyGroups{ get; };
+        Microsoft.UI.Xaml.Data.CollectionViewSource MyCollectionViewSource;
+    }
+
+    runtimeclass GroupSection
+    {
+        GroupSection();
+
+        String Key{ get; };
+
+        Windows.Foundation.Collections.IObservableVector<ListItem> MyItems{ get; };
+    }
+
+    runtimeclass ListItem
+    {
+        ListItem();
+
+        String Name{ get; };
+    }
+}
