@@ -12,6 +12,7 @@ namespace ListViewGroups
         Microsoft.UI.Xaml.Data.CollectionViewSource MyCollectionViewSource;
     }
 
+    [Windows.UI.Xaml.Data.Bindable]
     runtimeclass GroupSection
     {
         GroupSection();
