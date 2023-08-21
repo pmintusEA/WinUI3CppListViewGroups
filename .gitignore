@@ -1,0 +1,8 @@
+
+.vs/
+Generated Files/
+packages/
+Debug/
+Release/
+ARM64/
+x64/
